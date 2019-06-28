@@ -6,9 +6,20 @@
 </template>
 
 <script>
+  import {mapActions} from 'vuex'
   import FooterGuider from './components/FooterGuide/FooterGuider'
+  import {reqFoodCategorys} from "./api";
 
   export default {
+
+    mounted(){
+      //this.$store.dispatch('getAddress')
+      this.getAddress()
+    },
+
+    methods:{
+      ...mapActions(['getAddress'])
+    },
     components: {
       FooterGuider
     }
