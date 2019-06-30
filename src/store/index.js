@@ -1,6 +1,6 @@
 /*
-vuex核心管理模块
-*/
+vuex最核心的管理对象store
+ */
 import Vue from 'vue'
 import Vuex from 'vuex'
 import state from './state'
